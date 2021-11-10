@@ -1,0 +1,24 @@
+{
+  "name": "workingflashloan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node run-arbitrage.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@studydefi/money-legos": "^2.4.2",
+    "@truffle/hdwallet-provider": "^1.6.0",
+    "@uniswap/sdk": "^2.0.5",
+    "dotenv": "^10.0.0",
+    "node-telegram-bot-api": "^0.54.0",
+    "web3": "^1.5.2"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
