@@ -4,8 +4,6 @@ const abis = require("./abis");
 const { mainnet: addresses } = require("./addresses");
 const Flashloan = require("./build/contracts/FlashSwap.json");
 
-
-
 const web3 = new Web3(
     new Web3.providers.WebsocketProvider(process.env.WSS_URL)
 );
@@ -246,9 +244,9 @@ const init = async () => {
                     addresses.tokens.BUSD, //token2
                     0, //amount0
                     amountInBUSD.toString(), //amount1
-                    addresses.apeSwap.factory, //apefactory
-                    addresses.pancakeSwap.router, //pancakerouter
-                    repayWbnbPancakeFee.toString()
+                    addresses.pancakeSwap.factory, //pancakeFactory
+                    addresses.apeSwap.router, //apeRouter
+                    pancakePaybackCalcWbnb.toString()
                 );
 
                 const data = tx.encodeABI();
